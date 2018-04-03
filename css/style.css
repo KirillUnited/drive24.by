@@ -8,6 +8,11 @@
 @import url('nanoscroller.css');
 @import url('menu_company.css');
 
+
+.call {
+
+}
+
 body {
 	font-family: "MyriadProRegular";
 	margin: 0;
