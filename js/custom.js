@@ -120,10 +120,12 @@ $(document).ready(function () {
 	$('body').on('click', '.btn-mobile-search', function() {
     $('.header__middle_search_mobile').show();
     $('.search-mobile-input form input').focus();
+    $('.wrapper').children(':not(.header__middle_search_mobile)').hide();
     return false;
   });
   $('body').on('click', '.cancel__text', function() {
     $('.header__middle_search_mobile').hide();
+    $('.wrapper').children(':not(.popups, .header__middle_search_mobile)').show();
     return false;
   });
 
@@ -219,7 +221,7 @@ $(document).ready(function () {
 		$(this).parent()
 			.removeClass('display-flex');
 		return false;
-	})
+	});
 	// en NEW_menu
 
 

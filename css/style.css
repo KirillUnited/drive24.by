@@ -7,11 +7,7 @@
 @import url('map-yandex.css');
 @import url('nanoscroller.css');
 @import url('menu_company.css');
-
-
-.call {
-
-}
+@import url('notice.css');
 
 body {
 	font-family: "MyriadProRegular";

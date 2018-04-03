@@ -1,8 +1,7 @@
 
-// var button = document.getElementById('#btn-fullscreen');
-// button.addEventListener(outer, "click", function() {
-//   $('#map').requestFullscreen();
-//   return false;
+// $('body').on('click', '.company-page_map-btn', function () {
+//   $('#map').toggleClass('maxMap')
+//   myMap.container.enterFullscreen();
 // });
 
 function initMap() {
