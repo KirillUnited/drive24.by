@@ -28,6 +28,9 @@ $(document).ready(function () {
 			$('.popups, .popup').fadeOut();
 		};
 	});
+  // POP_UP_ADD_COMPANY
+  
+  // END POP_UP_ADD_COMPANY
 
 	$('.popup form').submit(function () {
 		$(this).find('.error').remove();
@@ -201,16 +204,20 @@ $(document).ready(function () {
 	// end timetable_right
 
 	// NEW_menu
-	$('body').on('click', '.header__middle_menu > li > a', function () {
-		$(this).parent()
-			.find('.header__menu-block')
-			.toggleClass('dropdown')
-			.parent().children('a')
-			.toggleClass('dropdown-arrow');
+    
+      $('body').on('click', '.header__middle_menu > li > a', function () {
+        if ($(window).width() < 971 ) {
+      $(this).parent()
+        .find('.header__menu-block')
+        .toggleClass('dropdown')
+        .parent().children('a')
+        .toggleClass('dropdown-arrow');  
+      return false;
+      };
+  });
 
-		return false;
-	});
-
+    
+	
 	$('body').on('click', 'button.navbar-toggle', function () {
 		$(this).parent().parent()
 			.find('.header__menu')
