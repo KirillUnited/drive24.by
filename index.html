@@ -471,71 +471,69 @@
 			</div>
 
 			<!-- POP_UP_ADD_COMPANY -->
-			<div class="popup__sign-up popup__sign-up_company popup">
+			<div class="popup__sign-up_company popup">
 				<div class="close">
 					<img src="img/close.png" alt="close">
 				</div>
 				<div class="popup__content">
-					<h2>Добро пожаловать!</h2>
-					<form action="">
-						<input type="email" class="form-control" placeholder="Введите email">
-						<input type="password" class="form-control" placeholder="Введите пароль">
-						<button class="btn btn-default" type="submit">
-							ВОЙТИ
-						</button>
-					</form>
-					<div class="remember-password">
-						<a href="#">Забыли пароль или не можете войти?</a>
-					</div>
-					<div class="registration">
-						<a href="#">РЕГИСТРАЦИЯ</a>	
-					</div>
-					<div class="sign-in__social">
-						<h3>Войти с помощью</h3>
-						<ul class="sign-in__social_links list-unstyled">
-							<li>
-								<a href="#"><img src="img/sign-in__social_links/google.png" alt="google" title="google"></a>
-							</li>
-							<li>
-								<a href="#"><img src="img/sign-in__social_links/VK.png" alt="VK" title="VK"></a>
-							</li>
-							<li>
-								<a href="#"><img src="img/sign-in__social_links/facebook.png" alt="facebook" title="facebook"></a>
-							</li>
-							<li>
-								<a href="#"><img src="img/sign-in__social_links/OK.png" alt="OK" title="OK"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- END POP_UP_ADD_COMPANY -->
-		</div>
+					<h2>Добавьте компанию за 5 минут!</h2>
+					<form class="form-horizontal" action="" method="post">
+						<div class="form-group">
+              <label>Название компании:</label>
+              <input type="text" class="form-control" placeholder="Введите юридическое название компании или торговую марку">
+            </div>
+            <div class="form-group">
+              <label>УНП:</label>
+              <input type="text" class="form-control" placeholder="Введите учетный номер налогоплательщика">
+            </div>
+            <div class="form-group">
+              <label>Контактное лицо:</label>
+              <input type="text" class="form-control" placeholder="Введите Ваше ФИО">
+            </div>
+            <div class="form-group form-group_email">
+              <label>Номер телефона и email:</label>
+              <input type="text" class="form-control form-control_phone" placeholder="Введите номер телефона">
+              <input type="email" class="form-control form-control_email" placeholder="Введите email">
+            </div>
+            <div class="form-group form-group_file">
+              <label>Свидетельство о госрегистрации:</label>
+              <input type="file" class="form-control" placeholder="Загрузите свидетельство о госрегистрации">
+              <span class="button">Загрузить</span>
+              <div class="file-name"></div>
+            </div>
+            <div class="form-group form-group_btn">
+              <button class="btn btn-default btn-add-company" type="submit">Добавьте компанию</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- END POP_UP_ADD_COMPANY -->
+    </div>
 
-		<!-- POP SEARCH -->
-		<div class="header__middle_search_mobile">
-			<div class="search-mobile-input">
-				<form action="">
-					<input type="text" class="form-control" placeholder="Что хотите найти?">
-				</form>
-				<a href="#" class="cancel__text">Отмена</a>
-				<div class="clearfix"></div>
-			</div>
-			<div class="search-mobile-btns">
-				<a href="#" class="search-mobile-btns__btn search-mobile-btns__btn_active">Новости</a>
-				<a href="#" class="search-mobile-btns__btn">Каталог</a>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<!-- END POP SEARCH -->
+    <!-- POP SEARCH -->
+    <div class="header__middle_search_mobile">
+     <div class="search-mobile-input">
+      <form action="">
+       <input type="text" class="form-control" placeholder="Что хотите найти?">
+     </form>
+     <a href="#" class="cancel__text">Отмена</a>
+     <div class="clearfix"></div>
+   </div>
+   <div class="search-mobile-btns">
+    <a href="#" class="search-mobile-btns__btn search-mobile-btns__btn_active">Новости</a>
+    <a href="#" class="search-mobile-btns__btn">Каталог</a>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!-- END POP SEARCH -->
 
-		<!-- END POP-UP -->
-	</div>
+<!-- END POP-UP -->
+</div>
 
-	<!-- scripts -->
+<!-- scripts -->
 
-	<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="libs/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

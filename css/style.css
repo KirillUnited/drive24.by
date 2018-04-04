@@ -8,6 +8,8 @@
 @import url('nanoscroller.css');
 @import url('menu_company.css');
 @import url('notice.css');
+@import url('requisites.css');
+@import url('requisites-media.css');
 
 body {
 	font-family: "MyriadProRegular";

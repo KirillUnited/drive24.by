@@ -147,7 +147,107 @@
 	font-size: 0;
 	margin: 20px 20px 0 0;
 }
+/*!!!!!*/
+.popups {
+	display: block;
+}
+.popup__sign-up_company .form-group_btn {
+	text-align: center;
+}
+.popup__sign-up_company .btn-add-company {
+	font-size: 18px;
+	color: #fff;
+	width: 260px;
+	border: 1px solid rgb(66, 133, 244);
+	background-color: rgb(66, 133, 244);
+	border-radius: 5px;
+	margin: 0;
+}
+.popup__sign-up_company {
+	max-width: 1022px;
+}
+.popup__sign-up_company .popup__content {
+	width: 100%;
+	min-width: 320px;
+	padding: 65px 100px 70px;
+}
+.popup__sign-up_company .form-control {
+	display: inline-block;
+	font-size: 16px;
+	font-family: "MyriadProRegular";
+	font-weight: normal;
+	color: #a0a0a0;
+	width: 535px;
+	height: 40px;
+	margin-right: 5px;
+}
+.popup__sign-up_company .form-group_email .form-control {
+	width: 260px;
+}
+.popup__sign-up_company .form-horizontal {
+	text-align: right;
+}
+.popup__sign-up_company .form-horizontal .form-group {
+	margin-right: 0; 
+    margin-left: 0; 
+}
+.popup__sign-up_company .form-control_phone {
+	margin-right: 12px;
+}
+.popup__sign-up_company label {
+	font-size: 18px;
+	font-family: "MyriadProRegular";
+	font-weight: normal;
+	margin-right: 15px;
+}
+/*FILE_UPLOAD*/
+.form-group_file {
+	position: relative;
+}
+.form-group_file input[type=file] {
+	opacity: 0;
+}
+.form-group_file .button {
+	display: inline-block;
+	font-size: 18px;
+	font-family: "MyriadProRegular";
+	color: #4285f4;
+	border: 1px solid #4285f4;
+	border-radius: 4px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 130px;
+	height: 40px;
+	right: 5px;
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+}
+.form-group_file .file-name {
+	display: inline-block;
+	font-size: 16px;
+    font-family: "MyriadProRegular";
+    font-weight: normal;
+    color: #a0a0a0;
+    width: 405px;
+    height: 40px;
+    line-height: 38px;
+    text-align: left;
+    right: 135px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 0 12px;
+}
+.form-group_file .button,
+.form-group_file .file-name {
+	position: absolute;
+	top: 0;
+}
 
+/*END FILE_UPLOAD*/
+/*FORM_ERROR*/
 form .error {
 	display: block;
 	padding: 4px;
@@ -157,4 +257,8 @@ form .error {
 	border-radius: 2px;
 	font-size: 14px;
 	line-height: 16px;
+	text-align: left;
+}
+.popup__sign-up_company form .error {
+	max-width: 260px;
 }

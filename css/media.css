@@ -24,7 +24,46 @@
     left: -106px;
   }
 }
-
+@media screen and (max-width: 1040px) {
+  /*BEGIN POPUP*/
+  .popup__sign-up_company {
+    top: 0;
+    border-radius: 0;
+  }
+  .popup__sign-up_company .popup__content {
+    padding: 70px 120px 75px;
+  }
+  .popup__sign-up_company .form-control,
+  .popup__sign-up_company label {
+    width: 100%;
+    margin-right: 0;
+  }
+  .popup__sign-up_company .form-horizontal .form-group:not(:last-child) {
+    text-align: left;
+  }
+  .popup__sign-up_company .form-group_email .form-control {
+    width: 48.5%;
+  }
+  .popup__sign-up_company .form-group_email .form-control_phone {
+    margin-right: 15px;
+  }
+  .popup__sign-up_company .form-group_email .form-control_email {
+    margin-right: -3px;
+  }
+  .form-group_file .button, 
+  .form-group_file .file-name {
+    top: 30px;
+  }
+  .form-group_file .file-name {
+    width: 100%;
+    left: 0;
+  }
+  .form-group_file .button {
+    right: 0;
+    z-index: 10;
+  }
+  
+}
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
@@ -521,6 +560,7 @@
   .user__block_menu {
     display: none;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -624,6 +664,20 @@
     font-size: 12px;
   }
   /*END POPUP*/
+  /*BEGIN POPUP*/
+  .popup__sign-up_company .popup__content {
+    padding: 40px 20px 40px;
+  }
+  .popup__sign-up_company .popup__content h2 {
+    line-height: 25px;
+  }
+  .popup__sign-up_company .form-group_email .form-control {
+    width: 100%;
+    margin-right: 0;
+  }
+  .popup__sign-up_company .form-control_phone {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -641,6 +695,20 @@
     height: 120px;
     line-height: 120px;
     width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-group_file .file-name {
+    display: none;
+  }
+  .form-group_file .button {
+    width: 100%;
+  }
+  .popup__sign-up_company .btn-add-company {
+    width: 100%;
+  }
+  .popup__sign-up_company form .error {
+    max-width: 100%;
   }
 }
 

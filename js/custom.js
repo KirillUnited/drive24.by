@@ -29,7 +29,10 @@ $(document).ready(function () {
 		};
 	});
   // POP_UP_ADD_COMPANY
-  
+  $('body').on('click', '.header__middle_login .add', function () {
+    $('.popups, .popup__sign-up_company').fadeIn();
+    return false;
+  });
   // END POP_UP_ADD_COMPANY
 
 	$('.popup form').submit(function () {
@@ -211,7 +214,7 @@ $(document).ready(function () {
         .find('.header__menu-block')
         .toggleClass('dropdown')
         .parent().children('a')
-        .toggleClass('dropdown-arrow');  
+        .toggleClass('dropdown-arrow');
       return false;
       };
   });
@@ -230,6 +233,53 @@ $(document).ready(function () {
 		return false;
 	});
 	// en NEW_menu
+  // FILE_UPLOAD
+    var wrapper = $( ".form-group_file" ),
+        inp = wrapper.find( "input[type='file']" ),
+        btn = wrapper.find( ".button" ),
+        lbl = wrapper.find( ".file-name" ),
+        txt = wrapper.find( "input[type='file']" ).attr('placeholder');
+
+
+
+lbl.text(txt);
+
+
+    btn.add( lbl ).click(function(){
+        inp.click();
+    });
+
+    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    inp.change(function(){
+
+        var file_name;
+        if( file_api && inp[ 0 ].files[ 0 ] )
+            file_name = inp[ 0 ].files[ 0 ].name;
+        else
+            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+        if( ! file_name.length )
+            return;
+
+        if( lbl.is( ":visible" ) ){
+            lbl.text( file_name );
+        }else
+            btn.text( file_name );
+    }).change();
+
+$( window ).resize(function(){
+    $( ".file_upload input" ).triggerHandler( "change" );
+});
+$( window ).resize(function(){
+    if ($(window).width() < 584) {
+      btn.text( "Загрузить свидетельство" );
+    } else {
+      btn.text( "Загрузить" );
+    }
+});
+
+// END FILE_UPLOAD
+
 
 
 });
